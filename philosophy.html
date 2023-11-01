@@ -62,7 +62,7 @@
 						</header>
 						<div class="content">
 							<div class="form">
-								<form method="post" action="#">
+								<form method="post" action="https://script.google.com/macros/s/AKfycbymbnCe0zVWTWj1RDY5LRIUfD92rtq08O47zAMOTJfDpqLa4-L6uc3IsQ8jf9jf1zTUxA/exec" id="my-form">
 									<div class="fields">
 										<div class="field half">
 											<input name="name" id="name" placeholder="Name" type="text" />
@@ -74,10 +74,19 @@
 											<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
 										</div>
 									</div>
+                                    
+                                    <div class="cf-turnstile" data-sitekey="0x4AAAAAAAMTgtSTEZUDtDpI" data-callback="javascriptCallback"></div>
+                                    
 									<ul class="actions special">
-										<li><input type="button" class="button" value="Send Message" /></li>
+										<li><input type="button" class="button" value="Send Message" disabled/></li>
 									</ul>
 								</form>
+                                <script type="text/javascript">
+                                 function javascriptCallback() {
+                                     const submit = document.getElementById("submit");
+                                     submit.removeAttribute("disabled");
+                                 }
+                                </script>
 							</div>
 							<ul class="icons">
 								
