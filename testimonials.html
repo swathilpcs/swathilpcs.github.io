@@ -39,7 +39,10 @@
 							<div class="profiles">
 								<div class="profile">
 									<div class="image">
-										<img src="images/pic05.jpg" alt="" />
+										<span class="icon fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                        <i class="fa fa-inverse fa-brain fa-stack-1x"></i>
+                                        </span>
 									</div>
 									<div class="content">
 										<h3>Arya</h3>
@@ -48,22 +51,32 @@
 								</div>
 								<div class="profile">
 									<div class="image">
-										<img src="images/pic06.jpg" alt="" />
+										<span class="icon fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                        <i class="fa fa-inverse fa-comments fa-stack-1x"></i>
+                                        </span>
 									</div>
 									<div class="content">
 										<h3>Anna</h3>
 										<p>"Swathi provides feedback that is honest, clear, and direct. She highlights her supervisees strengths while also providing constructive feedback on how they can improve their skills and expertise. She works collaboratively with her supervisees and acts as a guide to help them use their knowledge and skills to work towards achieving a goal or solving a difficult problem. Swathi is thoughtful and intentional in the way she approaches her role as a supervisor. Swathi has a genuine passion for teaching, mentoring, and supervising that is evident to anyone who has worked with Swathi in a professional setting."</p>
 									</div>
 								</div>
+                                
+                                <!--
 								<div class="profile">
 									<div class="image">
-										<img src="images/pic07.jpg" alt="" />
+                                        <span class="icon fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                        <i class="fa fa-inverse fa-book fa-stack-1x"></i>
+                                        </span>
 									</div>
 									<div class="content">
 										<h3>Faucibus lorem</h3>
 										<p>Sed egestas, ante et vulputate volutpat pede semper est luctus metus eu augue. Morbi purus amet libero.</p>
 									</div>
 								</div>
+                                -->
+                                
 							</div>
 						</div>
 					</div>
@@ -83,20 +96,20 @@
 								<form method="post" action="https://script.google.com/macros/s/AKfycbymbnCe0zVWTWj1RDY5LRIUfD92rtq08O47zAMOTJfDpqLa4-L6uc3IsQ8jf9jf1zTUxA/exec" id="my-form">
 									<div class="fields">
 										<div class="field half">
-											<input name="Name" id="name" placeholder="Name" type="text" required />
+											<input name="name" id="name" placeholder="Name" type="text" />
 										</div>
 										<div class="field half">
-											<input name="Email" id="email" placeholder="Email" type="email" required />
+											<input name="email" id="email" placeholder="Email" type="email" />
 										</div>
 										<div class="field">
-											<textarea name="Message" id="message" rows="6" placeholder="Message" required></textarea>
+											<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
 										</div>
 									</div>
                                     
                                     <div class="cf-turnstile" data-sitekey="0x4AAAAAAAMTgtSTEZUDtDpI" data-callback="javascriptCallback"></div>
                                     
 									<ul class="actions special">
-										<li><input id="submit" type="submit" class="submit" value="Send Message" disabled/></li>
+										<li><input type="button" class="button" value="Send Message" disabled/></li>
 									</ul>
 								</form>
                                 <script type="text/javascript">
